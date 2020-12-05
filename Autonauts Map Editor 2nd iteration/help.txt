@@ -1,0 +1,36 @@
+----------------------------------------
+Getting Started
+----------------------------------------
+1.	Load the application: Map Editor for Autonauts.
+2.	The import window will appear. 
+3.	Click the import button.
+4.	The file viewer window will open. Select the appropriate world save text file and click the open button.
+5.	The import window for the map editor will appear with the file extension that was selected. Click the load button.
+6.	The map will load in a new window with a floating toolbar.
+----------------------------------------
+Editing the Map
+----------------------------------------
+1.	Use the slider to increase the diameter of the brush.
+2.	Use the drop down menu under Tile types to select a terrain type. 
+3.	Use the mouse cursor to click on an area of the map to be changed.
+----------------------------------------
+Resetting the Map
+----------------------------------------
+1.	Click on the clear map button to undo all changes made to the map.
+----------------------------------------
+Saving the Map
+----------------------------------------
+1.	To save edits, click on the exit/save button in the toolbar.
+2.	A new window will open. Here click on path to specify which folder to save the map in.
+3.	Click on save as, and the file will be saved.
+4.	Close out of the application.
+----------------------------------------
+Capturing a Screenshot of the Map
+----------------------------------------
+1.	To capture a screenshot of the map, click on the Screenshot(F12) button on the GUI or alternatively, press the F12 key on the keyboard. The file will be saved to the desktop.
+----------------------------------------
+Closing the Application
+----------------------------------------
+1.	Close the map window and the toolbar will close automatically.
+2.	The export window will open, if there is no file to save, click on the x to close out of the application. 
+
