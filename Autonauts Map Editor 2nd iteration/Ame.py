@@ -23,6 +23,10 @@ class Map:
         self.canUndo = False
         self.canRedo = False
 
+        #gameIcon
+        gameIcon = pygame.image.load(os.path.join("assets", "AME.png"))
+        pygame.display.set_icon(gameIcon)
+
 
     def run(self):
         # game loop - set self.playing = False to end the game

@@ -1,11 +1,12 @@
 import PySimpleGUI as sg
+import os
 from AmeSettings import BUTTON_SIZE, THEMES
 
 class Menu:
 
     def __init__(self, theme="BlueMono", unlock=False, newLocation=(1420, 880)):
         self.theme = theme
-        sg.theme(self.theme)        
+        sg.theme(self.theme)
 
         self.toolsTabLayout = self.toolbarTabSetup()
         self.settingsTabLayout = self.settingsTabSetup()
@@ -14,7 +15,7 @@ class Menu:
                            sg.Tab("tools", self.toolsTabLayout, disabled=not unlock, key="-toolTab-")]])],
         ]
 
-        self.menuWindow = sg.Window("AME Menu", self.menuWindowLayout, keep_on_top=True, alpha_channel=0.9, location=newLocation)
+        self.menuWindow = sg.Window("AME Menu", self.menuWindowLayout, keep_on_top=True, alpha_channel=0.9, location=newLocation, icon=os.path.join("assets", "AME.ico"))
 
 
     def toolbarTabSetup(self):
@@ -64,14 +65,3 @@ class Menu:
 
     def quit(self):
         self.menuWindow.close()
-
-
-if __name__ == "__main__":
-    t1 = Menu()
-
-    while True:
-        event, values = t1.menuWindow.read()
-
-        if event == sg.WIN_CLOSED:
-            t1.quit()
-            break
