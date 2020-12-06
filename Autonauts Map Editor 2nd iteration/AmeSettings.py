@@ -1,5 +1,6 @@
 import pygame
 import os
+from PySimpleGUI import theme_list
 
 # assets loading
 TURF = pygame.image.load(os.path.join("assets", "turf.png"))
@@ -39,7 +40,7 @@ TILES_TYPE_DICT = {0: TURF, # Turf
                  29: STONE_DEPOSITS, # Stoned Deposit
                  }
 GAME_MODES = {0: "0. colonize", 1: "1. free", 2: "2. creative"}
-THEMES = ["BlueMono", "Black", "DarkBlue", "DarkGreen4", "GreenTan", "LightGreen", "TealMono"]
+THEMES = theme_list()
 
 # game settings
 ENLARGE = TILESIZE = 5
