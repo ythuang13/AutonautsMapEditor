@@ -43,7 +43,7 @@ GAME_MODES = {0: "0. colonize", 1: "1. free", 2: "2. creative"}
 THEMES = theme_list()
 
 # game settings
-ENLARGE = TILESIZE = 5
+ENLARGE = TILESIZE = 4
 FPS = 60
 WINDOW_WIDTH = 420 * ENLARGE
 WINDOW_HEIGHT = 210 * ENLARGE
