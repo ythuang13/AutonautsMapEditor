@@ -48,7 +48,7 @@ class Menu:
              sg.Button("quick launch", k="-quick-", tooltip="quick launch game")
             ],
             [sg.Checkbox("world visibility", default=True, k="-visibility-", tooltip="change export setting so world visibility are on"),
-             sg.Combo(["0. colonize", "1. free", "2. creative"], k="-gamemode-", default_value="0. colonize", readonly=True, tooltip="change export setting for in-game gamemode")
+             sg.Combo(["0. colonise", "1. free", "2. creative"], k="-gamemode-", default_value="0. colonize", readonly=True, tooltip="change export setting for in-game gamemode")
             ],
             [sg.Text("time:"),
              sg.Slider((0, 126000), resolution=1000, k="-time-", orientation="h", size=(30, 10), relief=sg.RELIEF_RIDGE, tooltip="change export setting for in-game time")
